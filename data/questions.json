@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "question": "What city do the Powerpuff Girls protect?",
+    "options": ["Metroville", "Townsville", "Citysberg", "Goodville"],
+    "answer": 1
+  },
+  {
+    "id": 2,
+    "question": "Which mysterious ingredient was accidentally added to create the Powerpuff Girls?",
+    "options": ["Chemical Z", "Chemical Alpha", "Chemical X", "Chemical Y"],
+    "answer": 2
+  },
+  {
+    "id": 3,
+    "question": "What is the name of the Powerpuff Girls' creator and father figure?",
+    "options": ["Professor Utonium", "Professor Mojo", "Professor Oak", "Professor X"],
+    "answer": 0
+  },
+  {
+    "id": 4,
+    "question": "Which Powerpuff Girl has the power of ice breath?",
+    "options": ["Bubbles", "Buttercup", "All of them", "Blossom"],
+    "answer": 3
+  },
+  {
+    "id": 5,
+    "question": "What unique power does Bubbles have that her sisters don't?",
+    "options": ["Telekinesis", "Super speed", "Speaking to animals and other languages", "Sonic scream"],
+    "answer": 2
+  },
+  {
+    "id": 6,
+    "question": "Which villain was once a lab chimp who gained intelligence from Chemical X?",
+    "options": ["Him", "Fuzzy Lumpkins", "Princess Morbucks", "Mojo Jojo"],
+    "answer": 3
+  },
+  {
+    "id": 7,
+    "question": "What is the Mayor of Townsville's famous food obsession?",
+    "options": ["Donuts", "Hot sauce", "Pickles", "Pizza"],
+    "answer": 2
+  },
+  {
+    "id": 8,
+    "question": "What color is Blossom's hair bow/ribbon?",
+    "options": ["Pink", "Purple", "Orange", "Red"],
+    "answer": 3
+  },
+  {
+    "id": 9,
+    "question": "What phrase does the narrator say at the end of most episodes?",
+    "options": [
+      "And so the world was saved once again!",
+      "The day is saved, thanks to the Powerpuff Girls!",
+      "Evil is defeated, Townsville is safe!",
+      "And so justice prevails in Townsville!"
+    ],
+    "answer": 1
+  }
+]
