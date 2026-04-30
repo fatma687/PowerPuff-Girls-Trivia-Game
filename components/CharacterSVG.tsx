@@ -3,9 +3,9 @@ export type CharacterKey = "blossom" | "bubbles" | "buttercup";
 /* ─────────────────────────────────────────────────────
    BLOSSOM  —  auburn hair, red bow, pink dress
 ───────────────────────────────────────────────────── */
-function Blossom() {
+function Blossom({ svgStyle }: { svgStyle?: React.CSSProperties }) {
   return (
-    <svg viewBox="0 0 120 200" width="120" height="200" aria-label="Blossom">
+    <svg viewBox="0 0 120 200" width="120" height="200" aria-label="Blossom" style={svgStyle}>
       {/* ── Long auburn hair (behind face) ── */}
       <path
         d="M 18 72 Q 4 120 8 175 Q 14 192 26 188 Q 32 160 28 110 Q 24 88 20 74 Z"
@@ -62,9 +62,9 @@ function Blossom() {
 /* ─────────────────────────────────────────────────────
    BUBBLES  —  blonde pigtails, blue dress
 ───────────────────────────────────────────────────── */
-function Bubbles() {
+function Bubbles({ svgStyle }: { svgStyle?: React.CSSProperties }) {
   return (
-    <svg viewBox="0 0 120 200" width="120" height="200" aria-label="Bubbles">
+    <svg viewBox="0 0 120 200" width="120" height="200" aria-label="Bubbles" style={svgStyle}>
       {/* ── Pigtail puffs (behind face) ── */}
       <circle cx="8" cy="64" r="18" fill="#FFD700" />
       <circle cx="112" cy="64" r="18" fill="#FFD700" />
@@ -107,9 +107,9 @@ function Bubbles() {
 /* ─────────────────────────────────────────────────────
    BUTTERCUP  —  short black hair flick, green dress
 ───────────────────────────────────────────────────── */
-function Buttercup() {
+function Buttercup({ svgStyle }: { svgStyle?: React.CSSProperties }) {
   return (
-    <svg viewBox="0 0 120 200" width="120" height="200" aria-label="Buttercup">
+    <svg viewBox="0 0 120 200" width="120" height="200" aria-label="Buttercup" style={svgStyle}>
       {/* ── Short black bob (behind face) ── */}
       <ellipse cx="60" cy="44" rx="46" ry="32" fill="#1a1a1a" />
       {/* Flipped ends left */}
@@ -150,8 +150,14 @@ function Buttercup() {
   );
 }
 
-export default function CharacterSVG({ name }: { name: CharacterKey }) {
-  if (name === "blossom") return <Blossom />;
-  if (name === "bubbles") return <Bubbles />;
-  return <Buttercup />;
+export default function CharacterSVG({
+  name,
+  svgStyle,
+}: {
+  name: CharacterKey;
+  svgStyle?: React.CSSProperties;
+}) {
+  if (name === "blossom") return <Blossom svgStyle={svgStyle} />;
+  if (name === "bubbles") return <Bubbles svgStyle={svgStyle} />;
+  return <Buttercup svgStyle={svgStyle} />;
 }
